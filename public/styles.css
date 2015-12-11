@@ -1,0 +1,20 @@
+.s{
+    position:fixed;
+    width:500px;
+    height:500px;
+}
+.slide1{
+    background:#f1f1f1;
+}
+.slide2{
+    background:#e1e1e1;
+}
+.slide3{
+    background:#262626;
+}
+body{
+	background-color: green
+}
+.newpost{
+	background-color: yellow
+}
