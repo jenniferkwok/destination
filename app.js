@@ -1,14 +1,3 @@
-var app = angular.module('destination', ['ui.router']);
-
-app.controller("MainCtrl", function ($scope) {
-	$scope.message = "YO!"
-
-	$scope.addPost = function() {
-		console.log($scope.newPost);
-	}
-})
-
-
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
@@ -19,6 +8,9 @@ var bodyParser = require('body-parser');
 //CONFIG//
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+// configure body-parser
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 //ROUES//
 app.get("/", function(req, res){
