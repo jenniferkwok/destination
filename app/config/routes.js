@@ -3,7 +3,7 @@ var apiRouter = express.Router();
 var post = require('../models/post');
 var postsController = require('../controllers/posts-controller'); // bring in controllers
 
-apiRouter.param('post_id', postsController.postById);
+// apiRouter.param('post_id', postsController.postById);
 
 // configure router middleware
 apiRouter.route('/posts')
@@ -16,8 +16,8 @@ apiRouter.route('/posts/:post_id')
 
   .get(postsController.show)
 
-  .patch(postsController.update)
+  // .patch(postsController.update)
 
-  .delete(postsController.destroy);
+  // .delete(postsController.destroy);
 
 module.exports = apiRouter;

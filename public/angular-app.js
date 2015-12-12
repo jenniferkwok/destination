@@ -7,3 +7,4 @@ app.controller("MainCtrl", function ($scope) {
 		console.log($scope.newPost);
 	}
 })
+

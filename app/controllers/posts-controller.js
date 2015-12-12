@@ -56,20 +56,18 @@ function show(request, response) {
 //   });
 // }
 
-function destroy(request, response) {
-  Post.remove({ _id: request.params.post_id }, function(error) {
-    if (error) console.error('Could not delete post b/c:', error);
+// function destroy(request, response) {
+//   Post.remove({ _id: request.params.post_id }, function(error) {
+//     if (error) console.error('Could not delete post b/c:', error);
 
-    response.json({message: 'post successfully deleted'});
-  });
-}
+//     response.json({message: 'post successfully deleted'});
+//   });
+// }
 
 module.exports = {
   getAll: getAll,
-  postById: postById,
   create: create,
   index: index,
   show: show,
-  update: update,
-  destroy: destroy
+  // destroy: destroy
 };
