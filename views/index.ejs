@@ -35,6 +35,24 @@
 </form>
 </div>
   Welcome to the destination app!!!
+    <div ui-view></div>
+
+<div class="container">
+  <div ng-repeat="article in articles">
+  <md-card>
+    <div class="card">
+        <!-- <h1 class="panel-title form-inline"> -->
+        <h1>
+          {{post.location}}
+        </h1>
+        <h3>{{post.imgurl}}</h3>
+       
+    </div>
+    </md-card>
+  </div>
+
+</div>
+
   <div class = "slide1 s" data-0="left:0px;" data-1000="left:-500px"></div>
 <div class = "slide2 s" data-0="left:500px;"data-1000="left:0px"data-2000="left:-500px"></div>
 <div class = "slide3 s" data-0="left:1000px;"data-1000="left:500px"data-2000="left:0px"></div>
